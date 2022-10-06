@@ -1,0 +1,408 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+@font-face {
+  font-family:Peignot ;
+  src: url(../fonts/PeignotLTStd_Demi.otf);
+}
+html, body{
+  padding: 0%;
+  margin: 0%;
+
+}
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background: white;
+
+
+	
+	
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+  font-family: PeignotLTStd Demi;
+  width: 100%;
+  font-family: Peignot;
+}
+
+body header nav img{
+width: 100%;
+}
+.logo {
+  position: fixed;
+}
+
+body header ul{
+  margin: 0;
+  padding: 0;
+  /* position: fixed; */
+}
+
+body main img{
+  width: 100%;
+}
+
+body main {
+  text-align: center;
+}
+
+.devider {
+  width: 50%;
+
+}
+
+header {
+  background-image: url(../readme-images/rocknrollnav.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.classic{
+  background-image: none;
+  height: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body header nav ul{
+  margin: 0%;
+}
+
+body main video{
+  width: 100%;
+
+}
+
+.logo{
+  width: 7em;
+}
+
+.menu{
+  visibility: visible;
+}
+
+.wijnflessen{
+  margin-bottom: 1.5em;
+
+}
+
+body main p{
+  text-align: center;
+  margin-left: .5em;
+  margin-right: .5em;
+  font-size: 1.15em;
+  line-height:  1.6em; 
+}
+
+body main article{
+  background-color: #f9f9f9;
+  height: 6em;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+
+.dontspill{
+  width: 70%;
+  padding-bottom: 4em;
+}
+
+
+
+body main iframe{
+  width: 80%;
+}
+
+body main article a{
+  color: #252525;
+  text-decoration: none;
+  font-size:  0.95em; 
+}
+
+footer {
+  height: 10em;
+  padding-top: 3em;
+  font-size: .9em;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+footer p{
+ justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+div#circle{
+  position:absolute;
+  transform:translate(-30%,-50%);
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  border:2px solid black;
+}
+
+
+div#circle{
+    display: none;
+  }
+
+  header nav button {
+    display: block;
+    position: relative;
+    right: 10px;
+    float: right;
+    top: 30px;
+    z-index: 999;
+    background: transparent;
+    border: none;
+}
+
+header nav button span {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 2px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  position: relative;
+}
+
+/* maak een animatie, dat ie met translateX(-10px) naar boeven gaat, en dat ie naar opacity 0 gaat.
+ zet dan een delay op ieder item, dat steeds hoger wordt, zie bv:
+
+li:nth-of-type(5) {
+  animation-delay: .5s;
+}
+
+trigger de animatie vervolgens met de class die je toevoegt aan het menu
+
+nav.active li {
+  animation: fadeIn;
+  animation-duration: .3s;
+*/
+
+ul.active li{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-50px);
+  opacity: 0;
+
+}
+
+ul.not-active li{
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+li:nth-of-type(1){
+  animation-delay: 0s;
+}
+
+li:nth-of-type(2){
+  animation-delay: .1s;
+}
+
+li:nth-of-type(3){
+  animation-delay: .2s;
+}
+
+li:nth-of-type(4){
+  animation-delay: .3s;
+}
+
+li:nth-of-type(5){
+  animation-delay: .4s;
+}
+
+li:nth-of-type(6){
+  animation-delay: .5s;
+}
+
+li:nth-of-type(7){
+  animation-delay: .6s;
+}
+
+li:nth-of-type(8){
+  animation-delay: .7s;
+}
+
+li:nth-of-type(9){
+  animation-delay: .8s;
+}
+
+li:nth-of-type(10){
+  animation-delay: .9s;
+}
+
+
+ul.not-active li:nth-of-type(1){
+  animation-delay: .9s;
+}
+
+ul.not-active li:nth-of-type(2){
+  animation-delay: .8s;
+}
+
+ul.not-active li:nth-of-type(3){
+  animation-delay: .7s;
+}
+
+ul.not-active li:nth-of-type(4){
+  animation-delay: .6s;
+}
+
+ul.not-active li:nth-of-type(5){
+  animation-delay: .5s;
+}
+
+ul.not-active li:nth-of-type(6){
+  animation-delay: .4s;
+}
+
+ul.not-active li:nth-of-type(7){
+  animation-delay: .3s;
+}
+
+ul.not-active li:nth-of-type(8){
+  animation-delay: .2s;
+}
+
+ul.not-active li:nth-of-type(9){
+  animation-delay: .1s;
+}
+
+ul.not-active li:nth-of-type(10){
+  animation-delay: 0s;
+}
+
+
+@keyframes fadeIn {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+}
+
+button{
+  color: #111;
+}
+
+header nav button span:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color:black;
+  position: absolute;
+  top: -15px;
+}
+
+    header nav button.active span:before {
+        transform: translateY(10px) rotate(-85deg);
+        background-color: #fff;
+    }
+
+    header nav button.active span {
+        transform: translateY(-10px) rotate(45deg);
+        background-color: #fff;
+    }
+
+  header nav ul{
+    position: fixed;
+    top: 0px;
+    flex-direction: column;
+    width: 100%;
+    transition: 1s;
+    transform: scaleY(0);
+    transform-origin: 0% 0%;
+  }
+
+  header nav ul.active {
+    position: fixed;
+    top: 0px;
+    flex-direction: column;
+    background-color: rgb(15, 16, 16);
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 99;
+    padding-top: 110px;
+    transform: scaleY(1);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav ul.active span{
+  color: white;
+}
+
+body header nav ul li {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+body header nav ul li a{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
